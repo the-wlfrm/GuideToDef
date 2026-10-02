@@ -1,4 +1,4 @@
-<h1 align="center">Курс def в Python🐍</h1>
+<h1 align="center">Курс "def в Python" 🐍</h1>
 
 ###
 

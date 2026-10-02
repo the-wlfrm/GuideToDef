@@ -63,12 +63,12 @@ def attack():
         # Вызываем функцию для очистки
         timeToClear()
 
-def hill():
+def heal():
 
     # Все тоже самое, что и с функцией attack()
     global character_hp
 
-    hill_amount = int(input("Введите на сколько hp хотите вылечиться: "))
+    heal_amount = int(input("Введите на сколько hp хотите вылечиться: "))
     if character_hp >= 100:
         print("У тебя и так 100hp, куда больше?")
         timeToClear()
@@ -81,7 +81,7 @@ def hill():
             # (просто легонько ввели ограничение без усложнений)
             character_hp = 100
 
-        print("Ты вылечился на " + str(hill_amount) + "!")
+        print("Ты вылечился на " + str(heal_amount) + "!")
         timeToClear()
 
 
@@ -112,7 +112,7 @@ if __name__ == "__main__":
             attack()
 
         elif choice == 2:
-            hill()
+            heal()
 
         elif choice == 3:
             print("Выходим...")
